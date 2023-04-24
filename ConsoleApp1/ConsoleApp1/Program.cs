@@ -1,23 +1,85 @@
-﻿int age = 23;
-string name = "Dawid";
-bool male = true;
-
-string result = "Nazywam się_" + name + "_i mam_" + age + "_lata";
-string result1 = "Jestem mężczyzną po 20";
-string result2 = "Jestem mężczyzną w wieku 20-25 lat";
-string result3 = "Jestem kimś innym";
-if (male) ;
-{
-    if (age > 20)
-    
-        Console.WriteLine(result1);
-    
-    else if (age > 25) ;
-    
-        Console.WriteLine(result2);
-        if (name == "Dawid") ;
-        
-            Console.WriteLine(result);
-        
-    
+﻿int number = 321;
+string numberInString = number.ToString();
+char[] letters = numberInString.ToArray();
+Console.WriteLine("tak chce pisać");
+for (int i = 0; i < 10; i++)
+{ 
+    int count = 0;
+    foreach (char letter in letters)
+    {
+        if ((int)Char.GetNumericValue(letter) == i)
+        { 
+            count++; 
+        }
+    }
+    Console.WriteLine(i + ": " + count);
 }
+int numberb = 321;
+string numberbInString = number.ToString();
+char[] lettersb = numberInString.ToCharArray();
+Console.WriteLine("...");
+int counter0 = 0;
+int counter1 = 0;
+int counter2 = 0;
+int counter3 = 0;
+int counter4 = 0;
+int counter5 = 0;
+int counter6 = 0;
+int counter7 = 0;
+int counter8 = 0;
+int counter9 = 0;
+
+foreach (char letter in letters)
+{
+    if (letter == '0')
+    {
+        counter0++;
+    }
+    else if (letter == '1')
+    {
+        counter1++;
+    }
+    else if (letter == '2')
+    {
+        counter2++;
+    }
+    else if (letter == '3')
+    {
+        counter3++;
+    }
+    else if (letter == '4')
+    {
+        counter4++;
+    }
+    else if (letter == '5')
+    {
+        counter5++;
+    }
+    else if (letter == '6')
+    {
+        counter6++;
+    }
+    else if (letter == '7')
+    {
+        counter7++;
+    }
+    else if (letter == '8')
+    {
+        counter8++;
+    }
+    else if (letter == '9')
+    {
+        counter9++;
+    }
+
+}
+Console.WriteLine("0=>" + counter0);
+Console.WriteLine("1=>" + counter1);
+Console.WriteLine("2=>" + counter2);
+Console.WriteLine("3=>" + counter3);
+Console.WriteLine("4=>" + counter4);
+Console.WriteLine("5=>" + counter5);
+Console.WriteLine("6=>" + counter6);
+Console.WriteLine("7=>" + counter7);
+Console.WriteLine("8=>" + counter8);
+Console.WriteLine("9=>" + counter9);
