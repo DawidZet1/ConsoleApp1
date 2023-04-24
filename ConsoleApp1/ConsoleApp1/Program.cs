@@ -1,85 +1,87 @@
-﻿int number = 321;
+﻿int number = 56234623;
 string numberInString = number.ToString();
 char[] letters = numberInString.ToArray();
-Console.WriteLine("tak chce pisać");
+Console.WriteLine("+++");
+Console.WriteLine("wynik dla " + number);
 for (int i = 0; i < 10; i++)
-{ 
+{
     int count = 0;
     foreach (char letter in letters)
     {
         if ((int)Char.GetNumericValue(letter) == i)
-        { 
-            count++; 
+        {
+            count++;
         }
     }
     Console.WriteLine(i + ": " + count);
 }
-int numberb = 321;
-string numberbInString = number.ToString();
-char[] lettersb = numberInString.ToCharArray();
+int numberb = 123456789;
+string numberbInString = numberb.ToString();
+char[] lettersb = numberbInString.ToCharArray();
 Console.WriteLine("...");
-int counter0 = 0;
-int counter1 = 0;
-int counter2 = 0;
-int counter3 = 0;
-int counter4 = 0;
-int counter5 = 0;
-int counter6 = 0;
-int counter7 = 0;
-int counter8 = 0;
-int counter9 = 0;
+Console.WriteLine(" wynik dla cyfry " + numberb);
+int counterb0 = 0;
+int counterb1 = 0;
+int counterb2 = 0;
+int counterb3 = 0;
+int counterb4 = 0;
+int counterb5 = 0;
+int counterb6 = 0;
+int counterb7 = 0;
+int counterb8 = 0;
+int counterb9 = 0;
 
-foreach (char letter in letters)
+foreach (char letter in lettersb)
 {
     if (letter == '0')
     {
-        counter0++;
+        counterb0++;
     }
     else if (letter == '1')
     {
-        counter1++;
+        counterb1++;
     }
     else if (letter == '2')
     {
-        counter2++;
+        counterb2++;
     }
     else if (letter == '3')
     {
-        counter3++;
+        counterb3++;
     }
     else if (letter == '4')
     {
-        counter4++;
+        counterb4++;
     }
     else if (letter == '5')
     {
-        counter5++;
+        counterb5++;
     }
     else if (letter == '6')
     {
-        counter6++;
+        counterb6++;
     }
     else if (letter == '7')
     {
-        counter7++;
+        counterb7++;
     }
     else if (letter == '8')
     {
-        counter8++;
+        counterb8++;
     }
     else if (letter == '9')
     {
-        counter9++;
+        counterb9++;
     }
 
 }
-Console.WriteLine("0=>" + counter0);
-Console.WriteLine("1=>" + counter1);
-Console.WriteLine("2=>" + counter2);
-Console.WriteLine("3=>" + counter3);
-Console.WriteLine("4=>" + counter4);
-Console.WriteLine("5=>" + counter5);
-Console.WriteLine("6=>" + counter6);
-Console.WriteLine("7=>" + counter7);
-Console.WriteLine("8=>" + counter8);
-Console.WriteLine("9=>" + counter9);
+Console.WriteLine("0=>" + counterb0);
+Console.WriteLine("1=>" + counterb1);
+Console.WriteLine("2=>" + counterb2);
+Console.WriteLine("3=>" + counterb3);
+Console.WriteLine("4=>" + counterb4);
+Console.WriteLine("5=>" + counterb5);
+Console.WriteLine("6=>" + counterb6);
+Console.WriteLine("7=>" + counterb7);
+Console.WriteLine("8=>" + counterb8);
+Console.WriteLine("9=>" + counterb9);
